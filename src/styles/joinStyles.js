@@ -55,6 +55,7 @@ export const joinStyles = StyleSheet.create({
       color: '#333',
       marginBottom: 5,
       fontFamily: 'OpenSans-Regular',
+      marginHorizontal: 'auto'
     },
     inputBox: {
       borderWidth: 1,

@@ -53,7 +53,7 @@ export const useWebRTC = () => {
 
                 peerConnection.ontrack = (event) => {
                     const remoteStream = new MediaStream();
-                    event.stream[0].getTracks().forEach(track=>{
+                    event.streams[0].getTracks().forEach(track=>{
                         remoteStream.addTrack(track);
                     })
                     console.log("RECEIVING REMOTE STREAM", remoteStream.toURL());
@@ -152,7 +152,7 @@ export const useWebRTC = () => {
 
             if(!peerConnection) {
                 peerConnection = new RTCPeerConnection(peerConstraints);
-                peerConnection.current.set(sender, peerConnection);
+                peerConnections.current.set(sender, peerConnection);
 
                 peerConnection.ontrack = (event) => {
                     const remoteStream = new MediaStream();

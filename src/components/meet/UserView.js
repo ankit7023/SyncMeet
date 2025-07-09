@@ -1,10 +1,9 @@
-import { Animated, PanResponder, StyleSheet, Text, View } from 'react-native'
+import { Animated, Image, PanResponder, StyleSheet, Text, View } from 'react-native'
 import React, { useRef } from 'react'
 import { useLiveMeetStore } from '../../service/meetStore';
 import { useUserStore } from '../../service/userStore';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { RTCView } from 'react-native-webrtc';
-import { Image } from 'react-native-svg';
 import { EllipsisVertical } from 'lucide-react-native';
 
 const UserView = ({containerDimensions, localStream}) => {

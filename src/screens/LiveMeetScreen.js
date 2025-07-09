@@ -17,7 +17,7 @@ const LiveMeetScreen = () => {
 
   return (
     <View style={styles.container}>
-      <MeetHeader switchCamera={{switchCamera}}/>
+      <MeetHeader switchCamera={switchCamera}/>
       <View style={styles.peopleContainer} onLayout={onContainerLayout} >
         {containerDimensions && localStream && (
           <UserView 
@@ -26,7 +26,7 @@ const LiveMeetScreen = () => {
           />
         )}
 
-        {peopleData?.length > 0 ? (
+        {participants?.length > 0 ? (
           <People 
             people={participants}
             containerDimensions={containerDimensions}

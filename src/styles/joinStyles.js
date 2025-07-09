@@ -14,6 +14,7 @@ export const joinStyles = StyleSheet.create({
       alignItems: 'center',
       paddingVertical: 5,
       justifyContent: 'space-between',
+      marginTop: 10
     },
     headerText: {
       fontSize: RFValue(15),

@@ -16,6 +16,7 @@ export const headerStyles = StyleSheet.create({
       padding: 10,
       shadowColor: '#000',
       backgroundColor: '#fff',
+      marginTop: 10
     },
     placeholderText: {
       fontFamily: 'OpenSans-Regular',

@@ -25,6 +25,7 @@ const MeetHeader = ({switchCamera}) => {
 const styles = StyleSheet.create({
     container: {
         width: '100%',
+
     },
     header: {
         flexDirection: 'row',
@@ -37,11 +38,13 @@ const styles = StyleSheet.create({
     meetCode: {
         color: '#fff',
         fontSize: 18,
-        fontWeight: '500'
+        fontWeight: '500',
+        marginTop: 20
     },
     icon: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: 20
     },
     iconSpacing: {
         marginLeft: 20

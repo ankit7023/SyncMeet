@@ -37,6 +37,8 @@ export const prepareStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingVertical: 10,
+    marginTop: 13,
+    marginHorizontal: 9
   },
   camera: {
     width: 130,

@@ -10,5 +10,5 @@ import {Platform} from 'react-native';
 
 //USE YOUR LOCAL IP ADDRESS
 
-export const BASE_URL = 'http://192.168.1.51:3000';
-export const SOCKET_URL = 'ws://192.168.1.51:3000';
+export const BASE_URL = 'http://16.171.225.9:10000';
+export const SOCKET_URL = 'http://16.171.225.9:10000';
